@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BKK Banten</title>
+    <style>
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(100%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+      .animate-scroll {
+        animation: scroll-left 30s linear infinite;
+      }
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #09b9a5;
+        border-radius: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #fff; /* hijau sangat muda */
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-white text-gray-800">
+    <!-- NAVBAR -->
+    <header class="w-full shadow-sm bg-white fixed top-0 left-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="logo" class="h-10" />
+        </div>
+        <nav class="hidden md:flex gap-1 text-sm font-medium items-center">
+          <a href="#" class="px-5 py-2 rounded-full bg-[#09b9a5] text-white"
+            >Beranda</a
+          >
+          <div class="relative group text-gray-700">
+            <button
+              class="px-5 py-2 rounded-full hover:text-[#09b9a5] flex items-center gap-1"
+            >
+              Profil
+            </button>
+            <div
+              class="absolute left-0 mt-2 py-4 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300"
+            >
+              <!-- Hover bridge -->
+              <div class="absolute left-0 w-full h-4 -top-4"></div>
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Tugas Pokok & Fungsi</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Visi & Misi Pelayanan Publik</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Struktur Organiasi</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Maklumat Pelayanan</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Wilayah Kerja</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Moto Pelayanan</a
+              >
+            </div>
+          </div>
+          <div class="relative group text-gray-700">
+            <button
+              class="px-5 py-2 rounded-full hover:text-[#09b9a5] flex items-center gap-1"
+            >
+              Pelayanan
+            </button>
+            <div
+              class="absolute left-0 mt-2 py-4 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300"
+            >
+              <!-- Hover bridge -->
+              <div class="absolute left-0 w-full h-4 -top-4"></div>
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Jenis Pelayanan</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Tarif Pelayanan</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group text-gray-700">
+            <button
+              class="px-5 py-2 rounded-full hover:text-[#09b9a5] flex items-center gap-1"
+            >
+              Informasi Publik
+            </button>
+            <div
+              class="absolute left-0 mt-2 py-4 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300"
+            >
+              <!-- Hover bridge -->
+              <div class="absolute left-0 w-full h-4 -top-4"></div>
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Profil Tahunan</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Laporan Kinerja</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Standar Operasional Prosedur</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Laporan Pengendalian Gratifikasi dan Integritas</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Laporan Pemantauan dan evaluasi penyelenggaraan pelayanan
+                publik</a
+              >
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]"
+                >Persyaratan dan Prosedur Pelayanan</a
+              >
+            </div>
+          </div>
+
+          <div class="relative group text-gray-700">
+            <button
+              class="px-5 py-2 rounded-full hover:text-[#09b9a5] flex items-center gap-1"
+            >
+              Galeri
+            </button>
+            <div
+              class="absolute left-0 mt-2 py-4 w-56 bg-white shadow-xl rounded-xl opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300"
+            >
+              <!-- Hover bridge -->
+              <div class="absolute left-0 w-full h-4 -top-4"></div>
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]">Foto</a>
+              <a href="#" class="block px-6 py-2 hover:text-[#09b9a5]">Video</a>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full text-gray-700 hover:text-[#09b9a5]"
+            >Infografis</a
+          >
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full text-gray-700 hover:text-[#09b9a5]"
+            >Kontak</a
+          >
+          <a
+            href="#"
+            class="px-5 py-2 rounded-full text-gray-700 hover:text-[#09b9a5]"
+            >Pengaduan</a
+          >
+        </nav>
+        <button class="md:hidden">☰</button>
+      </div>
+    </header>
+
+    <div class="w-full bg-white py-2 pt-24">
+      <div class="max-w-6xl mx-auto flex items-center px-6">
+        <!-- Kotak Informasi Terbaru -->
+        <div class="bg-[#09b9a5] text-white px-4 py-2 rounded-0">
+          Informasi Terbaru
+        </div>
+
+        <!-- Running Text -->
+        <div class="flex-1 overflow-hidden relative">
+          <p
+            class="whitespace-nowrap animate-scroll text-sm text-gray-700 font-medium"
+          >
+            SELAMAT DATANG DI BALAI KEKARANTINAAN KESEHATAN KELAS 1 BANTEN
+            <img src="assets/icon-sm.png" class="inline h-4 mx-2" />
+            JADWAL PELAYANAN SENIN–KAMIS: 07:30–16:00
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HERO IMAGE -->
+    <section class="max-w-6xl mx-auto mt-6 px-6 text-center">
+      <img src="assets/slide1.png" class="w-full rounded-2xl shadow-lg" />
+      <div class="flex justify-center mt-3 gap-2">
+        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+        <div class="w-3 h-3 bg-[#09b9a5] rounded-full"></div>
+        <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+      </div>
+    </section>
+
+    <!-- TUGAS POKOK -->
+    <section class="max-w-6xl mx-auto mt-14 px-4 text-center">
+      <h2 class="text-xl font-bold mb-4">TUGAS POKOK</h2>
+      <div class="w-16 m-auto h-[2px] bg-[#09b9a5] mb-10"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+          <img src="assets/image-15.png" class="w-18 mx-auto mb-3" />
+          <p class="font-semibold">PENGAWASAN</p>
+        </div>
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+          <img src="assets/image-16.png" class="w-18 mx-auto mb-3" />
+          <p class="font-semibold">PENCEGAHAN</p>
+        </div>
+        <div class="border rounded-xl p-6 shadow hover:shadow-lg transition">
+          <img src="assets/image-17.png" class="w-18 mx-auto mb-3" />
+          <p class="font-semibold">RESPON</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BANNER -->
+    <section class="mt-14 w-full bg-[#09b9a5] text-white pt-16 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-wide">
+        KEMENKES HEBAT,<br />INDONESIA SEHAT!
+      </h2>
+      <img
+        src="assets/menkes.png"
+        class="h-[200px] mx-auto mt-5"
+        alt="menkes"
+      />
+    </section>
+
+    <!-- BERITA -->
+    <section class="max-w-6xl mx-auto mt-14 px-4 text-center">
+      <h2 class="text-xl font-bold mb-4">BERITA</h2>
+      <div class="w-16 m-auto h-[2px] bg-[#09b9a5] mb-10"></div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="shadow rounded-lg overflow-hidden">
+          <img src="assets/image-18.png" class="w-full h-50 object-cover" />
+          <div class="p-4 text-left text-sm">
+            <p class="text-gray-500">26-11-2025</p>
+            <p class="font-semibold mt-2">
+              BKK Kelas I Banten Siagakan Ambulans Motor dan Tenaga Medis di
+              Pusat Peringatan HUT ...
+            </p>
+            <p class="text-gray-500 mt-3">
+              Dalam rangka memperingati Hari Ulang Tahun ke-80 Kemerdekaan
+              Republik Indonesia, Balai Kekarantinaan Kesehatan (BKK) Kelas I
+              Banten ...
+            </p>
+            <a class="text-[#09b9a5] text-xs mt-2 inline-block" href="#"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <div class="shadow rounded-lg overflow-hidden">
+          <img src="assets/image-19.png" class="w-full h-50 object-cover" />
+          <div class="p-4 text-left text-sm">
+            <p class="text-gray-500">25-11-2025</p>
+            <p class="font-semibold mt-2">
+              BKK Kelas I Banten Gelar Upacara Peringatan 17 Agustus 2025
+            </p>
+            <p class="text-gray-500 mt-3">
+              Balai Kekarantinaan Kesehatan (BKK) Kelas I Banten menggelar
+              upacara bendera pada 17 Agustus 2025 untuk memperingati Hari...
+            </p>
+            <a class="text-[#09b9a5] text-xs mt-2 inline-block" href="#"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+
+        <div class="shadow rounded-lg overflow-hidden">
+          <img src="assets/image-20.png" class="w-full h-50 object-cover" />
+          <div class="p-4 text-left text-sm">
+            <p class="text-gray-500">14-11-2025</p>
+            <p class="font-semibold mt-2">
+              Menteri Kesehatan RI Melakukan Pemantauan...
+            </p>
+            <p class="text-gray-500 mt-3">
+              Bapak Menteri Kesehatan Republik Indonesia Ir. Budi Gunadi
+              Sadikin, S.Si., CHFC, CLU melakukan pemantauan arus Mudik di
+              Pelabuhan Ciwandan..
+            </p>
+            <a class="text-[#09b9a5] text-xs mt-2 inline-block" href="#"
+              >Baca Selengkapnya →</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STRUKTUR ORGANISASI -->
+    <section class="max-w-6xl mx-auto mt-14 px-4 text-center">
+      <h2 class="text-xl font-bold mb-4">STRUKTUR ORGANISASI</h2>
+      <div class="w-16 m-auto h-[2px] bg-[#09b9a5] mb-10"></div>
+      <div class="max-w-4xl mx-auto">
+        <img
+          class="w-full h-auto rounded-2xl shadow-lg"
+          src="assets/struktur.jpeg"
+        />
+      </div>
+    </section>
+
+    <!-- TAUTAN -->
+    <section class="max-w-6xl mx-auto mt-14 px-4 text-center">
+      <h2 class="text-xl font-bold mb-4">TAUTAN</h2>
+      <div class="w-16 m-auto h-[2px] bg-[#09b9a5] mb-10"></div>
+      <div class="flex flex-wrap justify-center gap-8">
+        <img src="assets/image-10.png" class="h-10" />
+        <img src="assets/image-11.png" class="h-10" />
+        <img src="assets/image-12.png" class="h-10" />
+        <img src="assets/image-13.png" class="h-10" />
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white mt-20 py-12">
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 px-4"
+      >
+        <div>
+          <h3 class="font-semibold text-lg mb-2">Hubungi Kami</h3>
+          <p class="text-sm">Jl. Mayjen Sutoyo No. 21 Cilegon Banten, 42438</p>
+          <p class="text-sm">
+            Telepon: <span class="text-green-400">0254 7853333</span>
+          </p>
+          <ul class="flex gap-3 mt-5">
+            <li><img src="assets/tt.png" alt="Tiktok" /></li>
+            <li><img src="assets/ig.png" alt="Instagram" /></li>
+            <li><img src="assets/yt.png" alt="Youtube" /></li>
+          </ul>
+          <ul class="w-full mt-5">
+            <li>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d507923.90679710614!2d106.0072982!3d-5.9733099!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e419048e82e601b%3A0xa3bdef617b123340!2sJl.%20Mayjend.%20Soetoyo%20No.21%2C%20Gerem%2C%20Kec.%20Gerogol%2C%20Kota%20Cilegon%2C%20Banten%2042438!5e0!3m2!1sid!2sid!4v1765113687102!5m2!1sid!2sid"
+                style="border: 0"
+                class="rounded"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid gap-6">
+          <input
+            class="p-2 rounded bg-gray-800 border border-gray-700 w-full"
+            placeholder="Nama"
+          />
+          <input
+            class="p-2 rounded bg-gray-800 border border-gray-700 w-full"
+            placeholder="Email"
+          />
+          <textarea
+            class="p-2 rounded bg-gray-800 border border-gray-700 w-full"
+            placeholder="Tulis pesan anda"
+          ></textarea>
+          <button
+            class="bg-[#09b9a5] hover:bg-emerald-700 text-white px-4 py-2 rounded"
+          >
+            KIRIM PESAN
+          </button>
+        </div>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-10">
+        © 2025 - Development by BKK Kelas I Banten
+      </p>
+    </footer>
+
+    <button
+      id="toTopBtn"
+      class="hidden fixed bottom-6 right-6 bg-[#09b9a5] text-white py-3 px-4 rounded-xl shadow-lg hover:bg-emerald-500 transition"
+    >
+      ↑
+    </button>
+
+    <script>
+      const toTopBtn = document.getElementById("toTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          toTopBtn.classList.remove("hidden");
+        } else {
+          toTopBtn.classList.add("hidden");
+        }
+      });
+
+      toTopBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>
